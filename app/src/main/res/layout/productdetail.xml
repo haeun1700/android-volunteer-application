@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="0dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D4D1D1"
+        android:orientation="vertical"
+        android:id="@+id/layout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="410dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="주의 성분 및 알레르기 성분" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="359dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:progressBackgroundTint="#0274F6"
+            android:progressBackgroundTintMode="src_over"
+            android:progressTint="#D84315"
+            android:progressTintMode="src_over" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="410dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:layout_weight="4"
+            android:text="판매처"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_weight="5"
+            android:text="가격"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_weight="4"
+            android:text="배달비"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="판매처 이동"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/priceList"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginVertical="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:spanCount="2"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:elevation="5dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/main_menu_bottom">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+</LinearLayout>

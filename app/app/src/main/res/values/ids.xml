@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="healthinfobtn" type="id" />
+    <item name="animalregisterbtn" type="id" />
+    <item name="registerbtn" type="id" />
+</resources>

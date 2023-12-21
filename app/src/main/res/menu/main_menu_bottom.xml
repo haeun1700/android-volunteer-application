@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="봉사 신청"
+        android:id="@+id/apply"
+        android:icon="@drawable/baseline_volunteer_activism_24"
+        app:showAsAction="always" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="실종 동물"
+        android:id="@+id/missing"
+        android:icon="@drawable/baseline_pets_24"
+        app:showAsAction="always"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="물품 정보"
+        android:id="@+id/info"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        app:showAsAction="always"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Q/A"
+        android:id="@+id/question"
+        android:icon="@drawable/baseline_question_answer_24"
+        app:showAsAction="always"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="마이페이지"
+        android:id="@+id/mypage"
+        android:icon="@drawable/baseline_supervised_user_circle_24"
+        app:showAsAction="always"/>
+</menu>

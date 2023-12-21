@@ -9,6 +9,21 @@
 3. 애견 용품에 대한 성분 구성 정보 제공
 ```
 
+```
+> 전체적인 데이터베이스 구조
+테이블
+price comparison : 물품 가격 정보 
+product : 물품 정보
+LostAnimal : 실종 동물 게시글 정보
+straydog
+	UserAccount : 계정 정보
+	VolunteerPost : 봉사자 모집 정보
+
+이미지 테이블(storage)
+product : 물품 사진
+meong-nyang/images : 실종 동물 사진
+StrayDog/images: 봉사모집 타이틀 사진
+```
   <img width="226" alt="image" src="https://github.com/haeun1700/android-volunteer-application/assets/111607963/a80a84bb-84be-4751-811c-259501a058d1">
 
   <img width="256" alt="image" src="https://github.com/haeun1700/android-volunteer-application/assets/111607963/c4326999-670a-4539-b678-26c18c3afed2">
